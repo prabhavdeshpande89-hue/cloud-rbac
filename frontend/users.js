@@ -1,6 +1,7 @@
 async function loadUsers() {
   const token = localStorage.getItem("token");
-  const res = await fetch("http://localhost:3000/api/users", {
+
+  const res = await fetch("https://cloud-rbac-api.onrender.com/api/users", {
     headers: { Authorization: `Bearer ${token}` }
   });
 
